@@ -4,7 +4,7 @@ body {
     display: flex;
     gap: 20px;
     margin: 20px;
-    background-color: rgb(246, 181, 246);
+    background-color: rgb(216, 121, 248);
   }
   
   #films {
@@ -17,13 +17,13 @@ body {
   #films li {
     cursor: pointer;
     padding: 10px;
-    border: 1px ;
+    border: 2px ;
     margin-bottom: 5px;
     background-color: bisque;
   }
   
   #films li:hover {
-    background-color: #c45086b1;
+    background-color: plum;
   }
   
   
