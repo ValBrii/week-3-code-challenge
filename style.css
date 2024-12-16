@@ -11,24 +11,22 @@ body {
     list-style: none;
     padding: 0;
     width: 200px;
-    border-right: 1px solid #ccc;
+    border-right: 1px ;
   }
   
   #films li {
     cursor: pointer;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px ;
     margin-bottom: 5px;
-    background-color: rgba(102, 187, 247, 0.817);
+    background-color: bisque;
   }
   
   #films li:hover {
     background-color: #c45086b1;
   }
   
-  .film-item.selected {
-    background-color: #ddd;
-  }
+  
   
   #movie-details img {
     width: 300px;
@@ -50,8 +48,8 @@ body {
     background-color: #ccc;
     cursor: not-allowed;
   }
-  
-  .sold-out {
-    color: red;
+  button:hover{
+    background-color: rgb(121, 198, 247);
   }
+  
   
