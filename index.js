@@ -7,7 +7,7 @@ const showtime = document.getElementById("movie-showtime");
 const tickets = document.getElementById("movie-tickets");
 const buyTicketBtn = document.getElementById("buy-ticket-btn");
 
-let currentFilm = null;
+let currentFilm ;
 
 // Fetch and display the first film details
 fetch("http://localhost:3000/films/1")
@@ -18,7 +18,7 @@ fetch("http://localhost:3000/films/1")
 fetch("http://localhost:3000/films")
   .then(response => response.json())
   .then(data => {
-    filmsList.innerHTML = ""; // Clear placeholder
+    filmsList.innerHTML = ""; 
     data.forEach(film => createFilmMenuItem(film));
   });
 
