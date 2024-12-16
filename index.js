@@ -9,6 +9,14 @@ const buyTicketBtn = document.getElementById("buy-ticket-btn");
 
 let currentFilm ;
 
+// Create a film menu item
+function createFilmMenuItem(film) {
+  const li = document.createElement("li");
+  li.textContent = film.title;
+  li.classList.add("film-item");
+  li.addEventListener("click", () => displayFilmDetails(film));
+  filmsList.appendChild(li);
+}
 // Fetch and display the first film details
 fetch("http://localhost:3000/films/1")
   .then(response => response.json())
@@ -24,15 +32,6 @@ fetch("http://localhost:3000/films")
     data.forEach(film => createFilmMenuItem(film));
   })
   .catch(error=>console.error('Error fetching movies:', error));
-
-// Create a film menu item
-function createFilmMenuItem(film) {
-  const li = document.createElement("li");
-  li.textContent = film.title;
-  li.classList.add("film-item");
-  li.addEventListener("click", () => displayFilmDetails(film));
-  filmsList.appendChild(li);
-}
 
 // Display the film details
 function displayFilmDetails(film) {
@@ -62,3 +61,4 @@ buyTicketBtn.addEventListener("click", () => {
     }
   }
 });
+
