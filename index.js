@@ -12,7 +12,9 @@ let currentFilm ;
 // Fetch and display the first film details
 fetch("http://localhost:3000/films/1")
   .then(response => response.json())
-  .then(data => displayFilmDetails(data));
+  .then(data => displayFilmDetails(data))
+  .catch(error=>console.error('Error fetching movie:', error));
+
 
 // Fetch and display all films in the menu
 fetch("http://localhost:3000/films")
@@ -20,7 +22,8 @@ fetch("http://localhost:3000/films")
   .then(data => {
     filmsList.innerHTML = ""; 
     data.forEach(film => createFilmMenuItem(film));
-  });
+  })
+  .catch(error=>console.error('Error fetching movies:', error));
 
 // Create a film menu item
 function createFilmMenuItem(film) {
