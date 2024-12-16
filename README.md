@@ -1,6 +1,6 @@
 # Week 3 code challenge 
-For this assessment, you'll be working on Flatdango. Flatiron Movie Theater is open for business! You will be building out an application, Flatdango, that allows a user to purchase movie tickets from the theater.
-
+ This code challenge involves building an application which displays the movies that are available for watching at a movie theatre and allows users to purchase the tickets for the movies that they want.
+ 
 ## Features
 - See the first movie's details
 - See a menu of all movies on the left side of the page
